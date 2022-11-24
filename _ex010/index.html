@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criando Links.</title>
+    <style>
+        body {
+            background-color: lightgoldenrodyellow;
+        }
+
+        header {
+            text-align: center;
+            background-color: rgba(0, 128, 0, 0.575);
+            color: white;
+            border-radius: 10px 10px 10px 10px;
+            margin: auto;
+            margin-bottom: 20px;
+            padding: 10px;
+        }
+
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+
+        main {
+          
+            min-width: 300px; 
+            max-width: 1000px;
+            margin: auto;
+            margin-bottom: 30px;
+            padding: 20px;
+            background-color: rgba(95, 158, 160, 0.322);
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418) ;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+
+        h2 {
+            font-family: Arial, Helvetica, sans-serif;
+           
+        }
+
+        p {
+            font-family: Arial, Helvetica, sans-serif;
+            color: green;
+            line-height: 1em;
+           
+        
+        }
+
+        a{
+            text-decoration: none;
+        }
+
+        p > a:hover{
+            text-decoration: underline;
+        }
+
+
+        ul {
+            display: inline-block;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2em;
+            
+           
+        }
+
+        li:hover {
+        
+            text-decoration: underline; 
+        }
+
+    </style>
+
+
+</head>
+<body>
+    <header>
+        <H1>Aprendendo colocar links externos e downloads.</H1>
+    </header>
+        <main>
+        <h1>Links Externos</h1><!--  Aqui usamos a tag a= anconra que vem acompanhada da href=referencia usamos a target blank para abrir o site em outra janela não fechando o site atual rel é a referência que o link é de um site externo que esta fora do site de navegação.-->
+        <p>Acessando o <a href="https://github.com/EdilanoFco/" target="_blank" rel="external">Repositório do Fco.Edilano.</a></p>
+        <p>Podemos também <a href="https://www.youtube.com/channel/UCvKmYcF0vniZpycz6LjIbAQ" target="_blank" rel="external" >Meu canal no Youtube, não tem conteúdo.</a></p>
+        <h2>Usando link interno.</h2>
+        <p><a href="pag02.html" rel="next">acessa á pagina 2</a>.</p>
+        <!-- para adicionar a pagina03 é ctrl+espaço+pagina+aquivo, a target é _self para abrir na mesma pagina e a referencia é next informando que é uma pagina interna.-->
+        <p><a href="_pag003/pagina03.html" target="_self" rel="next">clciando aqui você vai para a pagina 03</a></p>
+        <h2>Links para Downloads.</h2>
+    <ul>
+        <li><a href="_livro/10 - Ligações em toda parte.pdf">Baixar pdf.</a></li>
+        <li><a href="_livro/10 - Ligações em toda parte.zip">Livro compactado.</a></li>
+    </ul>
+    </main>
+</body>
+</html>

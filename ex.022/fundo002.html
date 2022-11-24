@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editando fundo do site</title>
+
+    <style>
+        body {
+            height: 98vh;/*configurando altura do body para imagem não ficar cortada*/
+            
+            background-color: blue;/*fundo do meu site, sempre colocar uma cor de fundo nunca branco.*/
+            background-image: url('images/wallpaper002.jpg');/*imagem de fundo do meu site.*/
+            background-repeat: no-repeat;/* no-repeat para não ter repetição da imagem nas laterais e embaixo da tela.*/
+            background-position: center center;/*posição da minha imagem, por padrão ela começa em left top, lado esquerdo no topo.*/
+            background-size: cover;/* cover para usar toma a imagem na tela.*/
+            background-attachment: fixed;
+
+            /*shorthand - background
+            sequencia> color > image > position > repeat > [size]> attachment
+            
+            */
+
+            background: blue url('images/wallpaper002.jpg') center center no-repeat cover fixed;
+        }
+
+        main {
+            background-color: white;
+            max-width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid green;
+            border-radius: 15px;
+            text-align: justify;
+        }
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Fundo de imagem.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id modi odit officiis magni nisi ullam corporis autem rerum inventore, nulla, dolores aspernatur harum eius iusto! Accusantium dolore cupiditate ipsam minima.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laborum, odit consequatur, laboriosam neque provident vitae eligendi reprehenderit atque eius iste porro saepe earum nihil, nobis magnam dignissimos ullam asperiores!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique impedit praesentium molestias eveniet esse deserunt modi suscipit, voluptates minus quia error itaque! Perferendis quam magni eaque quo ex, consectetur enim!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores similique sapiente dolores reprehenderit hic natus vitae quis a culpa maxime velit laborum iste ullam soluta aliquam, veniam voluptatibus iusto veritatis.
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi neque et numquam nobis. Aspernatur, iure accusantium laborum cupiditate tenetur illo. Nobis quibusdam facilis et excepturi enim eum cum eaque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis sapiente sequi dicta vero repellendus? Exercitationem earum a iste reprehenderit reiciendis ducimus voluptate sapiente. Ut saepe dolore iusto exercitationem. Dolores, numquam!
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat consequatur, est suscipit fuga at ducimus alias id exercitationem! Ipsam sit aspernatur earum eaque unde quia perferendis maxime dolores, cumque voluptatum!
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, dolor aliquid! Porro animi quos tempora officia aliquam, ratione excepturi obcaecati quasi voluptates exercitationem, dolorum veniam soluta pariatur! Aliquid, reiciendis saepe.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint dicta itaque cupiditate libero aliquam a molestias quod non, culpa accusantium earum harum, ab dolorum explicabo et ipsam eos placeat qui!
+        </p>
+    </main>
+    
+</body>
+</html>

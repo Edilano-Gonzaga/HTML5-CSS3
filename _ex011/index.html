@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML.</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas em HTML5.</h1>
+    <p>Vamos tentar abrir essas imagens em varios dispositivos.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="_imagens/foto-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="_imagens/foto-m.png" type="image/png">
+        <img src="_imagens/foto-G.png" alt=" Imagem flexivel.">
+
+    </picture>
+        <h1>Reproduzindo audios.</h1>
+        <p>Aprendendo a reproduzir audio no HTML5.</p>
+       
+        <audio preload="metadata" autoplay controls loop>
+            <source src="_midia/Depth Fuse - French Fuse.mp3" type="audio/mpeg"> 
+            <source src="_midia/kerllysilva-uma-coisa-nova-3aa0b3f1.ogg" type="audio/ogg"> <!-- Somente exemplo de arquivo.-->
+            <source src="_midia/kerllysilva-uma-coisa-nova-3aa0b3f1.wav" type="audio/wav"> <!-- Somente exemplo de arquivos.-->
+            <p>Infelizmente seu navegador não toca mp3, clique aqui <a href="_midia/kerllysilva-uma-coisa-nova-3aa0b3f1.mp3"></a> no link para baixar o arquivo.</p>
+            
+        
+        
+        
+        </audio>
+    
+</body>
+</html>
