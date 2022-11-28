@@ -7,15 +7,28 @@
 
     <style>
         body {
+            padding: 10px;
             background-color: rgba(63, 63, 128, 0.349);
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        
         table {
-            width: 500px;
+            width: 600px;
             border-collapse: collapse;
 
         }
+
+        /*td.posicao {
+            text-align: center;
+        }
+        */
 
         th, td {
             border: 1px solid black;
@@ -23,10 +36,19 @@
            
         }
 
+        img.image {
+            width: 800px;
+            height: 700px;
+            display: flex;
+            float: right;
+        
+        }
+
         td.num{
             text-align: right;
         }
 
+       
         thead, tfoot {
             background-color: gray;
             color: white;
@@ -36,12 +58,13 @@
     </style>
 
 
-    <title>Tabela02</title>
+    <title>Tabela Grande</title>
 </head>
 <body>
-    <h1>Tabela Grande</h1>
+    <h1>Usando Tabela Grande</h1>
     <!--Anatomia para tabelas Grandes
     Table
+    caption
         Thead (cabeça da tabela)
             tr, td,th
         Tbody (corpo da tabela)
@@ -50,139 +73,205 @@
         tr, td , th
     -->
      <table>
+        <caption>População das Unidades Federativas</caption>
+
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+              <th scope="col" style="width: 50px;">Posição</th>
+              <th scope="col">Estado</th>
+              <th scope="col" style="width: 100px;">Unidade Federativa</th>
+              <th scope="col" style="width:90px;">População</th>
+                
             </tr>
         </thead>
-
+        
+            <div><img src="images/mapa-regioes-e-estados-brasileiros-1000x870.jpg" class="image" alt="Mapa do mapa-do-brasil-legendado-pintado-regioes"></div>
         <tbody>
+            
             <tr>
+                <td>01</td>
                 <td>São Paulo</td>
+                <td>Sudeste</td>
                 <td class="num">46 649 132</td>
             </tr>
-            <tr>
+            <tr >
+                <td class="posicao">02</td>
                 <td>Minas Gerais</td>
+                <td>Sudeste</td>
                 <td class="num">21 411 923</td>
             </tr>
-            <tr>
+            <tr >
+                <td class="posicao">03</td>
                 <td>Rio de Janeiro</td>
+                <td>Sudeste</td>
                 <td class="num">17 463 349</td>
             </tr>
 
-            <tr>
+            <tr >
+                <td class="posicao">04</td>
                 <td>Bahia</td>
+                <td>Nordeste</td>
                 <td class="num">14 985 284</td>
             </tr>
 
             <tr>
+                <td class="posicao">05</td>
                 <td> Paraná</td>
+                <td>Sul</td>
                 <td class="num">11 597 484</td>
             </tr>
 
             <tr>
+                <td class="posicao">06</td>
                 <td>Rio Grande do Sul</td>
+                <td>Sul</td>
                 <td class="num">11 466 630</td>
             </tr>
 
-            <tr>
+            <tr >
+                <td class="posicao">07</td>
                 <td>Pernambuco</td>
+                <td>Nordeste</td>
                 <td class="num">9 674 793</td>
             </tr>
 
-            <tr>
+            <tr >
+                <td class="posicao">08</td>
                 <td>Ceará</td>
+                <td>Nordeste</td>
                 <td class="num">9 240 580</td>
             </tr>
 
             <tr>
+                <td class="posicao">09</td>
                 <td>Pará</td>
+                <td>Norte</td>
                 <td class="num">8 777 124</td>
             </tr>
 
             <tr>
+                <td class="posicao">10</td>
                 <td>Santa Catarina</td>
+                <td>Sul</td>
                 <td class="num">7 338 473</td>
             </tr>
 
             <tr>
+                <td class="posicao">11</td>
                 <td>Goiás</td>
+                <td>Centro-Oeste</td>
                 <td class="num">7 206 589</td>
             </tr>
 
-            <tr>
+            <tr >
+                <td class="posicao">12</td>
                 <td>Maranhão</td>
+                <td>Nordeste</td>
                 <td class="num">7 153 262</td>
             </tr>
 
             <tr>
+                <td class="posicao">13</td>
                 <td>Amazonas</td>
+                <td>Norte</td>
                 <td class="num">4 269 995</td>
             </tr>
 
-            <tr>
+            <tr >
+                <td class="posicao">14</td>
                 <td>Espírito Santo</td>
+                <td>Suldeste</td>
                 <td class="num">4 108 508</td>
             </tr>
 
-            <tr>
+            <tr >
+                <td class="posicao">15</td>
                 <td>Paraíba</td>
+                <td>Nordeste</td>
                 <td class="num">4 059 905</td>
             </tr>
 
             <tr>
+                <td class="posicao">16</td>
                 <td>Mato Grosso</td>
+                <td>Centro-Oeste</td>
                 <td class="num">3 567 234</td>
             </tr>
             
-            <tr>
+            <tr >
+                <td class="posicao">17</td>
                 <td>Rio Grande do Norte</td>
+                <td>Nordeste</td>
                 <td class="num">3 560 903</td>
             </tr>
 
-            <tr>
+            <tr >
+                <td class="posicao">18</td>
                 <td>Alagoas</td>
+                <td>Nordeste</td>
                 <td class="num">3 365 351</td>
             </tr>
 
-            <tr>
+            <tr >
+                <td class="posicao">19</td>
                 <td>Piauí</td>
+                <td>Nordeste</td>
                 <td class="num">3 289 290</td>
             </tr>
 
-            <tr>
+            <tr >
+                <td class="posicao">20</td>
                 <td>Distrito Federal</td>
+                <td>Centro-Oeste</td>
                 <td class="num">3 094 325</td>
             </tr>
 
             <tr>
+                <td class="posicao">21</td>
+                <td>Mato Grosso do Sul</td>
+                <td>Centro-Oeste</td>
+                <td class="num">2 839 188</td>
+            </tr>
+
+            <tr  >
+                <td class="posicao">22</td>
                 <td>Sergipe</td>
+                <td>Nordeste</td>
                 <td class="num">2 338 474</td>
             </tr>
 
             <tr>
+                <td class="posicao">23</td>
                 <td>Rondônia</td>
+                <td>Norte</td>
                 <td class="num">1 815 278</td>
             </tr>
 
             <tr>
+                <td class="posicao">24</td>
                 <td>Tocantins</td>
+                <td>Norte</td>
                 <td class="num">1 607 363</td>
             </tr>
 
             <tr>
+                <td class="posicao">25</td>
                 <td>Acre</td>
+                <td>Norte</td>
                 <td class="num">906.876</td>
             </tr>
 
             <tr>
+                <td class="posicao">26</td>
                 <td>Amapá</td>
+                <td>Norte</td>
                 <td class="num">877.613</td>
             </tr>
 
             <tr>
+                <td class="posicao">27</td>
                 <td>Roraima</td>
+                <td>Norte</td>
                 <td class="num">652.713</td>
             </tr>
 
@@ -191,7 +280,9 @@
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th></th>
+                <th scope="row">Total de Habitantes</th>
+                <td></td>
                 <td class="num"><strong>213.317.639</strong></td>
             </tr>
         </tfoot>
